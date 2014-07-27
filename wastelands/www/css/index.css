@@ -24,25 +24,28 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+   /* background-color:#E4E4E4;
+    background-image:linear-gradient(top, #FFFFFF 0%, #FFECBB 80%);
+    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #FFECBB 80%);
+    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #FFECBB 80%);
     background-image:-webkit-gradient(
         linear,
         left top,
         left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
+        color-stop(0, #FFFFFF),
+        color-stop(0.80, #FFECBB)
+    );*/
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'Uni Sans Heavy';
+
     font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
     text-transform:uppercase;
     width:100%;
+    background-image: url("img/participate-bg.png");
 }
 
 /* Portrait layout (default) */
@@ -102,14 +105,41 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+
+/* wasteland styling */
+
+#navbar ul {
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  background-color: #EF503B;
+  height: 30px;
+  }
+
+#navbar ul li {
+  display: inline;
+  }
+
+#navbar ul li a {
+  text-decoration: none;
+ /* padding: .2em 1em;*/
+  color: #fff;
+/*  background-color: #000;*/
+  }
+
+#navbar ul li a:hover {
+  color: #000;
+  background-color: #fff;
+  }

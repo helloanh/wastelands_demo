@@ -102,14 +102,43 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+
+
+/* custom wasteland styling */
+ body {
+  background-color: #1D1D1D;
+ }
+ #navbar ul {
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  background-color: #68C8CE;
+  }
+
+#navbar ul li {
+  display: inline;
+  }
+
+#navbar ul li a {
+  text-decoration: none;
+ /* padding: .2em 1em;*/
+  color: #fff;
+/*  background-color: #000;*/
+  }
+
+#navbar ul li a:hover {
+  color: #000;
+  background-color: #fff;
+  }
