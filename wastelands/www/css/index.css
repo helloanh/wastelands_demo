@@ -13,15 +13,10 @@ body {
     font-size: 2em; /* native */
     font-size: 4vh; /* viewport based */
     letter-spacing: 0.12em;
-    background-image:url('../img/mock-up/participate-bg.png');
-
 
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: none;
-
-
-    background-attachment:fixed;
 
     font-size:12px;
     height:100%;
@@ -29,8 +24,16 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
-    background-image: url("img/participate-bg.png");
 }
+
+#banner{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 /* Portrait layout (default) */
 .app {
