@@ -209,6 +209,19 @@
     registration page
 */
 
+.reg-container{
+  width: 75%;
+  top: 25%;
+  margin: auto;
+
+  position: relative;
+
+  #left: 50%;
+  #-webkit-transform: translate(-50%,-50%);
+  #    -ms-transform: translate(-50%,-50%);
+  #        transform: translate(-50%,-50%);
+}
+
 .title{
   position: relative;
   display: block;
@@ -224,26 +237,25 @@
   margin: 5% auto;
   border-radius: 20px;
   width: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  /*max-width: 400px;*/
+  max-height: 300px;
   background-color: #FFFFFF;
 }
 
 #reg-box:before{
   content: "";
-  /*display: block;*/
   padding-top: 100%;  /* initial ratio of 1:1*/
 }
 
 .form-container{
   position: relative;
-  top: 25%;
   width: 100%;
-  height: 50%;
+  padding-top: 45px;
 }
 
 #submit{
   position: relative;
+  bottom: 100px;
 }
 
 /*
