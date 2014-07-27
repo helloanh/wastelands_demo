@@ -7,19 +7,13 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-   /* background-color:#E4E4E4;
-    background-image:linear-gradient(top, #FFFFFF 0%, #FFECBB 80%);
-    background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #FFECBB 80%);
-    background-image:-ms-linear-gradient(top, #FFFFFF 0%, #FFECBB 80%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #FFFFFF),
-        color-stop(0.80, #FFECBB)
-    );*/
+
+
+    background-image:url('img/mock-up/participate-bg.png');
+
+
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    /*font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;*/
     font-family:'Uni Sans Heavy';
 
     font-size:12px;
@@ -298,4 +292,20 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+
+
+/* participate page */
+.participate-container {
+ padding: auto;
+ margin: 10%;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  width:200px;
 }
