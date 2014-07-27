@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Waste Lands</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="msapplication-tap-highlight" content="no" />
+  <link rel="stylesheet" type="text/css" href="css/inst1.css" />
+<!--   <link rel="stylesheet" type="text/css" href="css/index2.css" />
+ -->
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <div id="demo">
+    <ul>
+      <li class="dragend-page" style="background-color: white">
+
+          <div class="navigation-bar">
+            <div class="navigation-bar__center inst">WASTELANDS</div>
+          </div>
+          <div class="participate-container inst">
+            <img src="img/participate-arrow.png" style="width: 30%; max-width: 300px">
+          </div>
+
+      </li>
+      <li class="dragend-page" style="background-color: #6DA269">
+        <div class="container">
+            <div id="icon"><img src="img/leaf.png" style="width: 50px"/></div>
+            <div class="inst">
+                COLLECT RECYCLABLES, <br>
+                COMPOSTABLES, AND <br>
+                CIGARETTE BUTTS
+            </div>
+        </div>
+      </li>
+
+      <li class="middle dragend-page" style="background-color: #2E3A4C">
+        <div class="container">
+            <div id="icon"><img src="img/cvtp.png" style="width: 30%; max-width: 150px"/></div>
+            <div class="inst">
+                TRADE THEM IN &amp; 
+                COLLECT POINTS FOR: 
+                HEALTH/BEAUTY PRODUCTS, 
+                ORGANIC CLOTHING, 
+                BAND MERCHANDISE, 
+                CONCERT TICKETS, 
+                &amp; FOOD VENDOR 
+                VOUCHERS.
+            </div>
+        </div>
+      </li>
+      <li class="last dragend-page" style="background-color: #1D3B46">
+        <div class="container">
+            <div id="icon"><img src="img/tickets-icon.png" style="width: 35%; max-width: 150px"/></div>
+            <div class="inst">
+                CASH THEM IN FOR
+                SMALL GOODS OR
+                SAVE YOUR POINTS
+                TO "PURCHASE"
+                SOMETHING BIG!
+                TOP CONTRIBUTORS
+                WILL RECEIVE 2 TICKETS
+                TO NEXT YEAR'S EVENT!
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/dragend.js"></script>
+
+  <script>
+
+    $(function() {
+      new Dragend($("#demo").get(0), {
+        afterInitialize: function() {
+          $("#demo").css("visibility", "visible");
+        }
+      });
+    });
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+</html>
