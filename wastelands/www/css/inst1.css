@@ -242,10 +242,6 @@
   background-color: #FFFFFF;
 }
 
-#reg-box:before{
-  content: "";
-  padding-top: 100%;  /* initial ratio of 1:1*/
-}
 
 .form-container{
   position: relative;
@@ -255,8 +251,13 @@
 
 #submit{
   position: relative;
+  display: inline !important;
+  width: auto;
+  max-height: 100px !important;
   bottom: 100px;
 }
+
+
 
 /*
     onsen form
