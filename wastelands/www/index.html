@@ -2,14 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>Waste Lands</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="msapplication-tap-highlight" content="no" />
   <link rel="stylesheet" type="text/css" href="css/inst1.css" />
-<!--   <link rel="stylesheet" type="text/css" href="css/index2.css" />
- -->
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
@@ -31,19 +28,15 @@
   </script>
 
   <script type="text/javascript">
-    var submit = function() {
-
-      var teams = ["LANDS END", "SUTRO", "TWIN PEAKS", "BARBARY", "PANHANDLE"]
-      var t = teams[Math.floor(Math.random() * 5)]
-
-      console.log(teams)
-      console.log(t)
+    var submit = function(){
       var e = document.getElementById("email").value
       var fn = document.getElementById("fname").value
       var ln = document.getElementById("lname").value
 
-      console.log(e)
-
+      var teams = ["LANDS END", "SUTRO", "TWIN PEAKS", "BARBARY", "PANHANDLE"]
+      var t = teams[Math.floor(Math.random() * 5)]
+      var str = t.toLowerCase().replace(/\s/g, "")
+      
       var collector = {
         id: [
           {email:e},
@@ -57,6 +50,17 @@
       };
 
       client.addEvent("collectors", collector)
+
+      /*  reroute */
+      var link = "teams-"
+
+      link += str + ".html";
+      
+      setTimeout(function(){
+        // document.getElementById("submit-team").setAttribute("href", link + ".html")
+        window.location = link;
+        link.reload(true);
+      }, 2000);
     }
   </script>
 
@@ -90,14 +94,11 @@
         <div class="container">
             <div id="icon"><img src="img/cvtp.png" style="width: 30%; max-width: 150px"/></div>
             <div class="inst">
-                TRADE THEM IN &amp; 
-                COLLECT POINTS FOR: 
-                HEALTH/BEAUTY PRODUCTS, 
-                ORGANIC CLOTHING, 
+                TRADE FOR: 
                 BAND MERCHANDISE, 
                 CONCERT TICKETS, 
-                &amp; FOOD VENDOR 
-                VOUCHERS.
+                FOOD VENDOR VOUCHERS,
+                &amp; MORE.
             </div>
         </div>
       </li>
@@ -105,11 +106,6 @@
         <div class="container">
             <div id="icon"><img src="img/tickets-icon.png" style="width: 35%; max-width: 150px"/></div>
             <div class="inst">
-                CASH THEM IN FOR
-                SMALL GOODS OR
-                SAVE YOUR POINTS
-                TO "PURCHASE"
-                SOMETHING BIG!
                 TOP CONTRIBUTORS
                 WILL RECEIVE 2 TICKETS
                 TO NEXT YEAR'S EVENT!
@@ -120,7 +116,7 @@
               registration page
        -->
       <li class="dragend-page" style="background-color: #6DA269">
-        <div class="title" style="font-family: 'uni-heavy'">
+        <div class="title" style="font-family: 'uni-heavy'; margin: 15px auto;">
             WASTELANDS
         </div>
         <div class="reg-container">
@@ -133,7 +129,7 @@
                   <input type="text" class="text-input--underbar" id="lname" placeholder="last" value="">
                 </div>
                 <div class="button" id="submit">
-                  <a onclick='submit()' href="stats.html"><img src="img/submit-button-active.png" /></a>
+                  <a id="submit-team" onclick='submit()'><img src="img/submit-button-active.png" /></a>
                 </div>
             </div>
         </div>
