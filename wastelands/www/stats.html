@@ -32,7 +32,7 @@
       client.draw(total_sum_query, document.getElementById("totalbags"), {
         "width":"auto",
         "colors": ["#6DA269"],
-        "title": "total bags collected"
+        "title": "Bags Of Trash"
       });
 
       var detailed_query = new Keen.Query("sum", {
@@ -43,6 +43,7 @@
 
       client.draw(detailed_query, document.getElementById("teams"), {
         "colors": ['#F41C24','#FFD259','#2BE4BB','#EF5D20','#7ECCCF']
+        "title": " "
       });
     });
 
