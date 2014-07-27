@@ -22,7 +22,8 @@
       targetProperty: "bags"
     });
     client.draw(query, document.getElementById("totalbags"), {
-      // Custom configuration here
+      "width":"auto",
+      "colors": ["#6DA269"]
     });
 
     var query = new Keen.Query("sum", {
@@ -31,12 +32,16 @@
       groupBy: "team"
     });
     client.draw(query, document.getElementById("teams"), {
-      // Custom configuration here
+      "colors": ['#F41C24','#FFD259','#2BE4BB','#EF5D20','#7ECCCF']
     });
   });
+
+  setTimeout(function () { 
+    location.reload();
+  }, 20 * 1000);
 
 </script>
 
 <div id="totalbags"></div>
-
 <div id="teams"></div>
+<script type="text/javascript">setTimeout()</script>

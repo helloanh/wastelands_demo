@@ -45,6 +45,7 @@
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/registration-so.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/registration.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/schedule.html \
+/Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/stats.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/teams-barbary.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/teams-landsend.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/teams-panhandle.html \
