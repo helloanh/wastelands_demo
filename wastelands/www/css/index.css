@@ -125,76 +125,7 @@ h1 {
   background-color: #fff;
   }
 
-.icon-button,
-.icon-button--quiet {
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  padding: 4px 10px;
-  letter-spacing: 0;
-  color: #ffffff;
-  text-shadow: 0 1px none;
-  vertical-align: baseline;
-  background-color: rgba(0,0,0,0);
-  border: 1px solid #ffffff;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  font-weight: 400;
-  font-size: 17px;
-  -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-  vertical-align: middle;
-}
-.icon-button:active,
-.icon-button--quiet:active {
-  background-color: rgba(0,0,0,0);
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-  opacity: 0.2;
-}
-.icon-button:disabled,
-.icon-button--quiet:disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-.icon-button:focus,
-.icon-button--quiet:focus {
-  outline: 0;
-}
-.icon-button:hover {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-.icon-button--quiet {
-  background: transparent;
-  border: 1px solid transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-}
-.icon-button--quiet:active {
-  color: #ffffff;
-  text-shadow: 0 1px none;
-  background-color: transparent;
-  border: none;
-  opacity: 0.2;
-}
-.icon-button--quiet:hover {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}.navigation-bar {
+.navigation-bar {
   font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -302,8 +233,9 @@ h1 {
 
 /* participate page */
 .participate-container {
- padding: auto;
- margin: 10%;
+  margin: 0 auto;
+  margin-top: 20%;
+
 }
 
 img {
