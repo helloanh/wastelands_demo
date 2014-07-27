@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "uni-heavy";
+    src: url("../fonts/uni-sans-heavy.otf");
+}
+
+@font-face {
+    font-family: "uni-thin";
+    src: url("../fonts/uni-sans-thin.otf");
+}
+
+body {
+	background: #333333;
+	text-align: center;
+	font-family: 'uni-heavy';
+}
+
+.title{
+	position: relative;
+	display: block;
+	text-align: center;
+	font-size: 2em; /* native */
+	font-size: 4vh; /* viewport based */
+	letter-spacing: 0.12em;
+	color: #FFFFFF;
+	margin: 15px auto;
+}
+
+#totalbags{
+	margin-bottom: 20px;
+}
+#totalbags span{
+	font-family: 'uni-heavy';
+	color: #333333;
+}
+
+#teams{
+	left: -100px;
+	height: 400px;
+}

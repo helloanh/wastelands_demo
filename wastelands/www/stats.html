@@ -1,47 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Waste Lands</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="msapplication-tap-highlight" content="no" />
+  <link rel="stylesheet" type="text/css" href="css/stats.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
   <script type="text/javascript">
   !function(a,b){if(void 0===b[a]){b["_"+a]={},b[a]=function(c){b["_"+a].clients=b["_"+a].clients||{},b["_"+a].clients[c.projectId]=this,this._config=c},b[a].ready=function(c){b["_"+a].ready=b["_"+a].ready||[],b["_"+a].ready.push(c)};for(var c=["addEvent","setGlobalProperties","trackExternalLink","on"],d=0;d<c.length;d++){var e=c[d],f=function(a){return function(){return this["_"+a]=this["_"+a]||[],this["_"+a].push(arguments),this}};b[a].prototype[e]=f(e)}var g=document.createElement("script");g.type="text/javascript",g.async=!0,g.src="https://d26b395fwzu5fz.cloudfront.net/3.0.5/keen.min.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(g,h)}}("Keen",this);
   </script>
 
-
-    <script type="text/javascript">
-      //configure instance for project
-      var client = new Keen({
-        projectId: "53d477e733e4067ff9000003",
-        writeKey: "c41a9d6f583d51981e7ffacd25462c52b1872698078a6f7bc9eedadade7105f89286f55c8075acd25150e8cd97d484b0677464c41a8b90f88d66621f2b01c34813de2c2ab27a576889e9abd021df9881e5c99c8d2a790463156b8739df78f38e3ca70f300d009a05b642be56b784bc47",
-        readKey: "1026f0ce18d9a515c64bd2d723c673b17b4d2776e9ec235b2985dabfb0868048efc2a7833495bfde2bfef0b1e4849835eaae4dc1815d84ef47d1ce21d98027b5c2edb8acaab6b2e2da2525199dd85222c930dae845f42243543d0af9d77a844012b28c72776987e02565767af0527f26",
-      });
-
+  <script type="text/javascript">
+    //configure instance for project
+    var client = new Keen({
+      projectId: "53d477e733e4067ff9000003",
+      writeKey: "c41a9d6f583d51981e7ffacd25462c52b1872698078a6f7bc9eedadade7105f89286f55c8075acd25150e8cd97d484b0677464c41a8b90f88d66621f2b01c34813de2c2ab27a576889e9abd021df9881e5c99c8d2a790463156b8739df78f38e3ca70f300d009a05b642be56b784bc47",
+      readKey: "1026f0ce18d9a515c64bd2d723c673b17b4d2776e9ec235b2985dabfb0868048efc2a7833495bfde2bfef0b1e4849835eaae4dc1815d84ef47d1ce21d98027b5c2edb8acaab6b2e2da2525199dd85222c930dae845f42243543d0af9d77a844012b28c72776987e02565767af0527f26",
+    });
   </script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
+    Keen.ready(function(){
+      var total_sum_query = new Keen.Query("sum", {
+        eventCollection: "collectors",
+        targetProperty: "bags"
+      });
+      client.draw(total_sum_query, document.getElementById("totalbags"), {
+        "width":"auto",
+        "colors": ["#6DA269"],
+        "title": "total bags collected"
+      });
 
+      var detailed_query = new Keen.Query("sum", {
+        eventCollection: "collectors",
+        targetProperty: "bags",
+        groupBy: "team"
+      });
 
-  Keen.ready(function(){
-    var query = new Keen.Query("sum", {
-      eventCollection: "collectors",
-      targetProperty: "bags"
+      client.draw(detailed_query, document.getElementById("teams"), {
+        "colors": ['#F41C24','#FFD259','#2BE4BB','#EF5D20','#7ECCCF']
+      });
     });
-    client.draw(query, document.getElementById("totalbags"), {
-      "width":"auto",
-      "colors": ["#6DA269"]
-    });
 
-    var query = new Keen.Query("sum", {
-      eventCollection: "collectors",
-      targetProperty: "bags",
-      groupBy: "team"
-    });
-    client.draw(query, document.getElementById("teams"), {
-      "colors": ['#F41C24','#FFD259','#2BE4BB','#EF5D20','#7ECCCF']
-    });
-  });
+    // setTimeout(function () { 
+    //   location.reload();
+    // }, 20 * 1000);
+  </script>
+</head>
+<body>
+  <div class="title" style="font-family: 'uni-heavy'">
+    WASTELANDS
+  </div>
+  <div id="totalbags"></div>
+  <div id="teams"></div>
+  <script type="text/javascript">setTimeout()</script>
 
-  setTimeout(function () { 
-    location.reload();
-  }, 20 * 1000);
-
-</script>
-
-<div id="totalbags"></div>
-<div id="teams"></div>
-<script type="text/javascript">setTimeout()</script>
+</body>
+</html>
