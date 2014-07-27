@@ -3,6 +3,11 @@
     src: url("../fonts/uni-sans-heavy.otf");
 }
 
+@font-face {
+    font-family: "uni-thin";
+    src: url("../fonts/uni-sans-thin.otf");
+}
+
 /* vertically center divs. so annoying */
 .container{
   width: 50%;
@@ -115,7 +120,6 @@
 
 
 
-
 .navigation-bar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -148,9 +152,6 @@
   padding-right: 0;
   background: #ef503b;
   color: #ffffff;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 2px solid #FFA07A;
   font-weight: 400;
   width: 100%;
   white-space: nowrap;
@@ -192,6 +193,32 @@
 }
 
 
-#banner{
-  
+/*
+    registration page
+*/
+
+.title{
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 2em; /* native */
+  font-size: 4vh; /* viewport based */
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+
+#reg-box{
+  position: relative;
+  margin: 5% auto;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: #FFFFFF;
+}
+
+#reg-box:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
 }
