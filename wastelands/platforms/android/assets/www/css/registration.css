@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "uni-heavy";
+    src: url("../fonts/uni-sans-heavy.otf");
+}
+
+@font-face {
+    font-family: "uni-thin";
+    src: url("../fonts/uni-sans-thin.otf");
+}
+
+/* vertically center divs. so annoying */
+.container{
+  width: 75%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.title{
+  position: relative;
+  display: block;
+  text-align: center;  font-size: 2em; /* native */
+  font-size: 4vh; /* viewport based */
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+
+#reg-box{
+  position: relative;
+  margin: 5% auto;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: #FFFFFF;
+}
+
+#reg-box:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+}

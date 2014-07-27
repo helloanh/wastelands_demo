@@ -35,6 +35,7 @@
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/fonts \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/img \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/index.html \
+/Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/index2.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/inst1.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/inst2.html \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/inst3.html \
@@ -53,10 +54,13 @@
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/css/index.css \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/css/index2.css \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/css/inst1.css \
+/Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/css/registration.css \
+/Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/css/teams.css \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/fonts/Uni Sans Heavy Italic.otf \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/fonts/Uni Sans Thin Italic.otf \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/fonts/uni-sans-heavy.otf \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/fonts/uni-sans-thin.otf \
+/Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/img/begin-button.png \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/img/cvtp.png \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/img/icon.png \
 /Users/aria/Code/outsidehacks/wastelands_demo/wastelands/platforms/android/assets/www/img/leaf.png \
