@@ -4,7 +4,7 @@
 }
 
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     font-size: 2em; /* native */
     font-size: 4vh; /* viewport based */
     letter-spacing: 0.12em;
-    background-image:url('../img/mock-up/participate-bg.png');
+    background-image:url("../img/mock-up/participate-bg.png") no-repeat;
 
 
     -webkit-touch-callout: none;
@@ -29,7 +29,7 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
-    background-image: url("img/participate-bg.png");
+    background-image: url("../img/participate-bg.png");
 }
 
 /* Portrait layout (default) */
