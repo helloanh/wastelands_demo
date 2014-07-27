@@ -13,8 +13,6 @@ body {
     font-size: 2em; /* native */
     font-size: 4vh; /* viewport based */
     letter-spacing: 0.12em;
-    background-image:url("../img/mock-up/participate-bg.png") no-repeat;
-
 
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
@@ -29,12 +27,12 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
-    background-image: url("../img/participate-bg.png");
+    background-image: url(../img/mock-up/participate-bg.png) no-repeat;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    /*background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
@@ -220,3 +218,4 @@ img {
 div {
   width:200px;
 }
+
