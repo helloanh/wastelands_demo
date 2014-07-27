@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "uni-heavy";
+    src: url("../fonts/uni-sans-heavy.otf");
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  top: 25%;
+  left: 25%
+  right: 25%;
+  text-align: center;
+  position: fixed;
+}
+
+#icon img{
+  vertical-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.inst{
+  margin-top: 3%;
+  display: block;
+  text-align: center;
+  font-family: 'uni-heavy';
+  font-size: 2em;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
