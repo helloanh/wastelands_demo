@@ -101,74 +101,6 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-
-/* wasteland styling */
-
-#navbar ul {
-  margin: 0;
-  list-style-type: none;
-  text-align: center;
-  background-color: #EF503B;
-  height: 30px;
-  }
-
-#navbar ul li {
-  display: inline;
-  }
-
-#navbar ul li a {
-  text-decoration: none;
- /* padding: .2em 1em;*/
-  color: #fff;
-/*  background-color: #000;*/
-  }
-
-#navbar ul li a:hover {
-  color: #000;
-  background-color: #fff;
-  }
-
-.navigation-bar {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  white-space: nowrap;
-  overflow: hidden;
-  word-spacing: 0;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: none;
-  line-height: normal;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  z-index: 2;
-  display: table;
-  table-layout: fixed;
-  height: 44px;
-  padding-left: 0;
-  padding-right: 0;
-  background: #ef503b;
-  color: #ffffff;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 2px solid #FFA07A;
-  font-weight: 400;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .navigation-bar__center {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -190,18 +122,20 @@ h1 {
   overflow: hidden;
   display: table-cell;
   vertical-align: middle;
+  color: #F06023;
 }
 
 .navigation-bar__center {
   width: 45%;
   text-align: center;
   line-height: 44px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
 }
 .navigation-bar__center:first-child:last-child {
   width: 100%;
 }
+
 
 /* participate page */
 .participate-container {
@@ -213,10 +147,11 @@ h1 {
           transform: translate(-50%,-50%);
 }
 
-img {
+/*img {
   max-width: 100%;
-}
+}*/
 
 div {
   width:200px;
 }
+
